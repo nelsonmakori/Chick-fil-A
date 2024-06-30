@@ -1,0 +1,169 @@
+body{
+  margin:0;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+
+}
+
+
+.nav{
+   display: flex; 
+   height: 40px; 
+   width:100%; 
+   margin-left: 40px;
+   border-bottom: 1px solid black;
+
+}
+.left-nav{
+  display: inline-flex;
+  
+  
+  
+
+}
+.store-location{
+  display: flex;
+  margin-left: 13px;
+  align-items: center;
+}
+.middle-nav{
+
+  text-align: center;
+  width: 35%; 
+  
+   margin-left: 20%; 
+}
+.middle-nav ul{
+  display: flex;
+  gap: 14px;
+}
+.middle-nav li{
+  list-style: none;
+  color: red;
+  font-size: 13px;
+  font-weight: bold;
+}
+.right-nav{
+  display: flex;
+  text-align: center;
+ margin-left: 180px;
+  width: 350px;
+
+
+}
+.logo{
+  height: 40px;
+  border-radius: 250px;
+  border-right: 1px solid black;
+  margin-right: 12px; 
+
+}
+.paragraph{
+  font-size: 12px;
+  margin-left: 10px;
+  color: red;
+  
+}
+.logo-image{
+  border-right: 1px solid black;
+  height: 40px;
+  /* margin-right: 270px; */
+}
+.store{
+  height: 27px;
+  margin-bottom: 5px;
+}
+
+button{
+  height: 40px;
+  gap: 14px;
+  border-radius: 25px;
+}
+.order-now{
+  margin-left: 18px;
+   width: 120px; 
+   background-color: red;
+   color: white;
+   font-size: 12px;
+   cursor: pointer;
+   border: none;
+   height: 35px;
+}
+.order-now:hover{
+  background-color: darkred;
+}
+.signin-btn{
+  width: 90px;
+  color: red;
+  border: none;
+  height: 35px;
+  margin-left: 5px;
+  background-color: white;
+}
+hr{
+  font-size:6px;
+  font-weight: bolder;
+  width: 100%;
+  
+}
+.maple{
+  font-size: 30px;
+  color:rgb(1,79,113) ;
+  font-weight: bold;
+
+
+}
+h2{
+  margin-left: 50px;
+  color:rgb(1,79,113)  ;
+}
+.order-bacon{
+  display: flex;
+  margin-left: 50px;
+}
+.sandwich-image{
+  position: relative;
+  left: 333px;
+  height: 230px;
+}
+.order-btn{
+  width: 90px;
+  height: 35px;
+  background-color:#E30A2A ;
+  border: none;
+  color: #fff;
+}
+.top-section img{
+  height:115px;
+}
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+  
+}
+.top-section p{
+  line-height:14px;
+  color:#004F71 ;
+  font-weight: bolder;
+  font-size: 17px;
+  margin :0;
+  padding:0;
+  
+
+}
+.chick{
+  /* max-width: 650px; */
+}
+.sauces{
+  margin-left:40%;
+}
+.meals{
+  margin-left: 35%;
+}
+.chick{
+  max-width: 650px;
+}
+
