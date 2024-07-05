@@ -1,169 +1,62 @@
-body{
-  margin:0;
-  padding: 0;
-  width: 100%;
-  cursor: pointer;
-
-}
 
 
 .nav{
-   display: flex; 
-   height: 40px; 
-   width:100%; 
-   margin-left: 40px;
-   border-bottom: 1px solid black;
-
+  display: flex;
+  width:100%;
+  /* background-color: cadetblue; */
+  height: 40px;
+  border-bottom: 1px solid rgb(231, 225, 225);
 }
 .left-nav{
-  display: inline-flex;
+  display: flex;
+  /* background-color: aqua; */
+  width: 33.4%;
+
+}
+.middle-nav{
+  margin: auto;
+  text-align: center;
+  /* background-color: blueviolet; */
+  width:33.4%;
+  color: red;
   
-  
-  
+
+}
+.right-nav{
+  display: flex;
+  justify-content: end;
+  /* background-color: chartreuse; */
+  width: 33.4%;
+
+}
+.chikfla-logo{
+  border-right: 1px solid rgb(189, 184, 184);
+}
+.chikfla-logo img{
+  margin-right: 4px;
+  height: 35px;
+  border-radius:50px ;
 
 }
 .store-location{
   display: flex;
-  margin-left: 13px;
-  align-items: center;
-}
-.middle-nav{
-
-  text-align: center;
-  width: 35%; 
-  
-   margin-left: 20%; 
-}
-.middle-nav ul{
-  display: flex;
-  gap: 14px;
-}
-.middle-nav li{
-  list-style: none;
-  color: red;
-  font-size: 13px;
-  font-weight: bold;
-}
-.right-nav{
-  display: flex;
-  text-align: center;
- margin-left: 180px;
-  width: 350px;
-
-
-}
-.logo{
-  height: 40px;
-  border-radius: 250px;
-  border-right: 1px solid black;
-  margin-right: 12px; 
-
-}
-.paragraph{
-  font-size: 12px;
   margin-left: 10px;
-  color: red;
-  
 }
-.logo-image{
-  border-right: 1px solid black;
-  height: 40px;
-  /* margin-right: 270px; */
-}
-.store{
-  height: 27px;
-  margin-bottom: 5px;
-}
-
-button{
-  height: 40px;
-  gap: 14px;
-  border-radius: 25px;
-}
-.order-now{
-  margin-left: 18px;
-   width: 120px; 
-   background-color: red;
-   color: white;
-   font-size: 12px;
-   cursor: pointer;
-   border: none;
-   height: 35px;
-}
-.order-now:hover{
-  background-color: darkred;
-}
-.signin-btn{
-  width: 90px;
-  color: red;
-  border: none;
+.store-location img{
   height: 35px;
-  margin-left: 5px;
-  background-color: white;
 }
-hr{
-  font-size:6px;
-  font-weight: bolder;
-  width: 100%;
-  
+.store-address{
+  margin-left: 7px;
+  font-size: 13px;
+  color: red;
 }
-.maple{
-  font-size: 30px;
-  color:rgb(1,79,113) ;
-  font-weight: bold;
-
-
-}
-h2{
-  margin-left: 50px;
-  color:rgb(1,79,113)  ;
-}
-.order-bacon{
-  display: flex;
-  margin-left: 50px;
-}
-.sandwich-image{
-  position: relative;
-  left: 333px;
-  height: 230px;
-}
-.order-btn{
-  width: 90px;
+.shopping-cart img{
   height: 35px;
-  background-color:#E30A2A ;
-  border: none;
-  color: #fff;
 }
-.top-section img{
-  height:115px;
+.sign-btn{
+  color: red;
+  width: 35%;
+  height: 37px;
+  border-radius: 20px;
+  border-width: 1px;
 }
-.top-section{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  
-  
-}
-.top-section p{
-  line-height:14px;
-  color:#004F71 ;
-  font-weight: bolder;
-  font-size: 17px;
-  margin :0;
-  padding:0;
-  
-
-}
-.chick{
-  /* max-width: 650px; */
-}
-.sauces{
-  margin-left:40%;
-}
-.meals{
-  margin-left: 35%;
-}
-.chick{
-  max-width: 650px;
-}
-
