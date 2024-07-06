@@ -60,3 +60,47 @@
   border-radius: 20px;
   border-width: 1px;
 }
+h3{
+  color:#004F71 ;
+}
+.order-section{
+  display: flex;
+  justify-content: space-between;
+
+}
+.order-now{
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  height: 35px;
+  width:25%;
+  border: none;
+  margin-top: 10px;
+
+}
+
+p{
+  color:#004F71;
+  font-size:2em;
+  font-weight: 700;
+}
+.price{
+
+  margin-top:-10px;
+  
+}
+.products{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 90px;
+  color: #004F71;
+  font-size: 17px;
+  font-weight: 600;
+}
+.products img{
+  height:100px;
+}
+.sandwich img{
+  height: 150px;
+}
