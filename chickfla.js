@@ -1,14 +1,6 @@
-let menu = document.getElementById("menu");
-let orderList = document.getElementById("orderList");
 
-menu.addEventListener("mouseover", () => {
-  orderList.style.display = "block";
-  console.log("hapo vipi");
-});
-menu.addEventListener("mouseout", () => {
-  orderList.style.display = "none";
-});
-console.log(orderList);
+import {cart} from "../cart.js";
+import{products} from "../products.js";
 
 let generateHTML = "";
 
@@ -45,9 +37,7 @@ addToCart.forEach((button) => {
         mealName: mealName,
         quantity: 1,
       });
-      
     }
-
     let cartQuantity = 0;
 
     cart.forEach((item) => {
@@ -55,6 +45,19 @@ addToCart.forEach((button) => {
     });
 
     const totalCart = document.querySelector(".cart-quantity");
-    totalCart.innerHTML = cartQuantity;
+    totalCart.innerHTML = cartQuantity
+    
   });
+    
+})
+let menu = document.getElementById("menu");
+let orderList = document.getElementById("orderList");
+
+menu.addEventListener("mouseover", () => {
+  orderList.style.display = "block";
+  console.log("hapo vipi");
 });
+menu.addEventListener("mouseout", () => {
+  orderList.style.display = "none";
+});
+console.log(orderList);

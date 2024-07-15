@@ -1,5 +1,5 @@
 
-const products = [
+export const products = [
   {
     id:"3",
     image:"chikfla.images/salads.png",
