@@ -29,6 +29,23 @@
   width: 33.4%;
 
 }
+.cart-quantity{
+  position: relative;
+  bottom: 27px;
+  left:6px;
+   background-color: red; 
+  color: #fff;
+  padding-left:11px;
+  border-radius:50px;
+  font-size: 8px;
+  width:10px;
+  padding-left:-10px;
+  margin-left: 5px;
+  padding-left: 2px;
+
+  
+  
+}
 .chikfla-logo{
   border-right: 1px solid rgb(189, 184, 184);
 }
@@ -63,8 +80,8 @@
 .hover-nav ul{
   display: flex;
   text-align: center;
-  margin: auto;
-  margin-left: 13px;
+  border-bottom: 1px solid rgb(237, 227, 227);
+  margin-left:43px;
 }
 .hover-nav li{
   display: flex;
@@ -73,6 +90,11 @@
   color: red;
   font-size: 12px;
   font-weight: 570;
+}
+.menu{
+  color: red;
+  border: none;
+  background-color:#fff;
 }
 #orderList{
   display: none;
@@ -117,6 +139,13 @@ p{
   font-size: 17px;
   font-weight: 600;
 }
+.meals:hover{
+  background-color: beige;
+  border:1.5px solid tomato;
+  border-radius: 5px;
+  padding: 10px;
+
+}
 .products img{
   height:100px;
 }
@@ -124,5 +153,14 @@ p{
   height: 150px;
 }
 .chikfla-container{
+  cursor: pointer;
+}
+.add-cart{
+  background-color: yellow;
+  border-radius: 13px;
+  font-size:10px;
+  padding:7px;
+  width:85px;
+  border-width: thin;
   cursor: pointer;
 }
