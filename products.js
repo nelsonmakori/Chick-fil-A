@@ -17,5 +17,5 @@ export const products = [
     image:"chikfla.images/Beverages.png",
     price: 10.99,
     name:"beverage"
-  } 
+  }
 ]

@@ -3,6 +3,7 @@
 .nav{
   display: flex;
   width:100%;
+  
   /* background-color: cadetblue; */
   height: 40px;
   border-bottom: 1px solid rgb(231, 225, 225);
@@ -31,17 +32,17 @@
 }
 .cart-quantity{
   position: relative;
-  bottom: 27px;
-  left:6px;
+  bottom:24px;
+  left:27px;
    background-color: red; 
   color: #fff;
   padding-left:11px;
   border-radius:50px;
-  font-size: 8px;
+  font-size:7.5px;
   width:10px;
-  padding-left:-10px;
-  margin-left: 5px;
-  padding-left: 2px;
+  /* padding-left:-10px; */
+  /* margin-left: 5px; */
+  padding-left: 2px; */
 
   
   
@@ -76,6 +77,7 @@
   height: 37px;
   border-radius: 20px;
   border-width: 1px;
+  margin-right: 10px;
 }
 .hover-nav ul{
   display: flex;
@@ -139,6 +141,10 @@ p{
   font-size: 17px;
   font-weight: 600;
 }
+.product-orders{
+  
+  
+}
 .meals:hover{
   background-color: beige;
   border:1.5px solid tomato;
@@ -163,4 +169,139 @@ p{
   width:85px;
   border-width: thin;
   cursor: pointer;
+}
+.check-out-btn{
+  margin-right: 40px;
+  height: 37px;
+  border-radius: 20px;
+  border-width: 1px;
+  width:83px;
+  
+}
+.checkout-sign-in{
+  margin-right: 20px;
+  width:83px;
+  border-width: thin;
+}
+.nav-myorder{
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+hr{
+  margin-top: -12px;
+  color:gray;
+  font-size: 0.3px;
+}
+.my-order{
+  display: flex;
+  border-bottom: 2px solid gray;
+  height:90px;
+  margin-left:70px;
+  width:110%;
+}
+.my-food-order{
+  display: flex;
+
+}
+.myorder-h3{
+  font-size: 15px;
+}
+.my-order-checkout img{
+  height: 100px;
+}
+.my-order-checkout{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.my-order p{
+  font-size: 14px;
+}
+.check-out{
+  background-color: bisque;
+  height: 100px;
+  width: 40%;
+  height: 70vh;
+  margin-right: 17px;
+}
+.amount{
+  margin-left:34px;
+  margin-top: 24px;
+}
+.price{
+  font-size: 12px;
+}
+.delete-edit{
+  display: flex;
+  color: red;
+  font-size: 12px;
+}
+.Edit{
+  margin-left: 5px;
+}
+.delete{
+  margin-right: 5px;
+}
+
+.date-cvv{
+  display: flex;
+  font-size: 12px;
+  margin-left:50px;
+  margin-top: 10px;
+}
+.date-cvv input{
+  width:50%;
+  height: 25px;
+  border-radius:7px;
+  border-width: thin;
+}
+::placeholder{
+  font-size: 10px;
+}
+.card-name-number input{
+  width:60%;
+  height: 25px;
+  border-radius: 10px;
+  border-width: thin;
+}
+.card-name-number label{
+margin-right:133px;
+}
+.expire-date{
+  margin-left:70px;
+}
+
+.zip-code label{
+  margin-right:133px;
+  
+}
+.zip-code input{
+
+  width: 60%;
+  height: 25px;
+  border-radius: 10px;
+  border-width:thin;
+}
+.check-out-footer{
+  margin-top: 20px;
+  font-size: 12px;
+}
+.checkout-btn-done{
+  margin-top: 15px;
+  width:30%;
+  height:30px;
+  background-color: red;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+}
+.quantity{
+  margin-right: 5px;
+}
+.check-out-quantity{
+  margin-right: 10px;
 }

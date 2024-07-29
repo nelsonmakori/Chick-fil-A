@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <link rel="stylesheet" href="chick-fla.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="left-nav">
+        <div class="chikfla-logo">
+          <img src="chikfla.images/chickfla-logo.png" />
+        </div>
+        <div class="store-location">
+          <img src="chikfla.images/store.png" />
+          <div class="store-address">
+            <div>Drive-thru</div>
+            <div>main street & English Road (<a href="#">change</a>)</div>
+          </div>
+        </div>
+      </div>
+      <div class="middle-nav">
+        <button class="menu" id="menu">menu</button>
+      </div>
+      <div class="right-nav">
+        <button class="sign-btn checkout-sign-in">sign in</button>
+        <div class="shopping-cart">
+          <button class="check-out-btn">
+            <img src="chikfla.images/chikfla-cart.png" />
+            <div class="cart-quantity">0</div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="nav-myorder">
+      <h3>My Order</h3>
+    </div>
+    <hr />
+
+    <div class="my-order-checkout">
+      <div class="product-orders js-order-summery">
+        
+        
+        
+      </div>
+     
+      <div class="check-out">
+        <div class="card-name-number">
+          <h3>checkout</h3>
+         <label>Name on card:</label>
+         <br>
+         <input type="text" name="name">
+         <br>
+         <label>card Number:</label>
+         <br>
+         <input type="number" name="card number">
+        </div>
+        <div class="date-cvv">
+         <div><label class="exipre-date">Expire Date:</label>
+          <br>
+          <input type="number" name="number" placeholder="MMY/YY">
+         </div>
+         <div>
+          <label>CVV:</label>
+          <br>
+          <input type="text" name="cvv" placeholder="Security Code">
+         </div>
+        </div>
+        <div class="zip-code">
+          <label>zip code</label>
+          <br>
+          <input type="text" name="zipcode">
+        </div>
+
+        <div class="check-out-footer">
+          <div>By saving this payment credintial,you
+            <br>
+            affirmateveley consent for this credintial to be
+            <br>
+            stored and used for future ourchases using
+            <br>
+            All card information is securely encrypted
+            <br>
+                            your protection
+          </div>
+                            <button class="checkout-btn-done">Done</button>
+
+        </div>
+    </div>
+    <script type="module" src="checkout.js"></script>
+  </body>
+</html>

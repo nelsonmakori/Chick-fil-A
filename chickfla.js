@@ -1,6 +1,6 @@
 
-import {cart} from "../cart.js";
-import{products} from "../products.js";
+import {cart,addCart} from "./cart.js";
+import{products} from "./products.js";
 
 let generateHTML = "";
 
@@ -10,46 +10,38 @@ products.forEach((menu) => {
  <div>${menu.name}</div>
   $${menu.price}
   <br>
-  <button class="add-cart" data-food-name = "${menu.name}">add to cart</button>
+  <button class="add-cart" data-food-id = "${menu.id}">add to cart</button>
   </div>
 `;
 });
-console.log(generateHTML);
+
 document.querySelector(".products").innerHTML = generateHTML;
+
+function updateQuantity(){
+
+  let cartQuantity = 0;
+
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
+  });
+
+  const totalCart = document.querySelector(".cart-quantity");
+  totalCart.innerHTML = cartQuantity;
+  
+}
 
 const addToCart = document.querySelectorAll(".add-cart");
 addToCart.forEach((button) => {
   button.addEventListener("click", () => {
-    const mealName = button.dataset.foodName;
+    const mealId = button.dataset.foodId;
+    addCart(mealId)
+    updateQuantity()
+  }); 
+});
 
-    let matchingItem;
 
-    cart.forEach((item) => {
-      if (mealName === item.mealName) {
-        matchingItem = item;
-      }
-    });
 
-    if (matchingItem) {
-      matchingItem.quantity += 1;
-    } else {
-      cart.push({
-        mealName: mealName,
-        quantity: 1,
-      });
-    }
-    let cartQuantity = 0;
 
-    cart.forEach((item) => {
-      cartQuantity += item.quantity;
-    });
-
-    const totalCart = document.querySelector(".cart-quantity");
-    totalCart.innerHTML = cartQuantity
-    
-  });
-    
-})
 let menu = document.getElementById("menu");
 let orderList = document.getElementById("orderList");
 
