@@ -173,6 +173,7 @@ p{
 .check-out-btn{
   margin-right: 40px;
   height: 37px;
+  background-color: red;
   border-radius: 20px;
   border-width: 1px;
   width:83px;
