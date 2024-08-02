@@ -1,5 +1,5 @@
  
- export const cart = [
+ export let cart = [
   {
   mealId: "3",
   quantity: 1,
@@ -31,4 +31,17 @@
       })
     };
 }
+ export function removeFromCart(mealId){
+  const newCart = []
+  cart.forEach((cartItem)=>{
+    if(cartItem.mealId !== mealId){
+      newCart.push(cartItem)
+    }
+  });
+  cart = newCart;
+
+
+}
+
+
 

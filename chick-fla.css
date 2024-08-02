@@ -34,7 +34,7 @@
   position: relative;
   bottom:24px;
   left:27px;
-   background-color: red; 
+  background-color: red;  
   color: #fff;
   padding-left:11px;
   border-radius:50px;
@@ -43,9 +43,18 @@
   /* padding-left:-10px; */
   /* margin-left: 5px; */
   padding-left: 2px; */
+}
+.adding-quantity{
+  position: relative;
+  left:12px;
+  bottom: 25px;px;
+  width: 7px;
+  color: #fff;
+  border-radius:50px;
+  font-size:8px;
+  padding-left:2px;
+  
 
-  
-  
 }
 .chikfla-logo{
   border-right: 1px solid rgb(189, 184, 184);
@@ -161,6 +170,8 @@ p{
 .chikfla-container{
   cursor: pointer;
 }
+
+
 .add-cart{
   background-color: yellow;
   border-radius: 13px;
@@ -305,4 +316,6 @@ margin-right:133px;
 }
 .check-out-quantity{
   margin-right: 10px;
+  
+  
 }

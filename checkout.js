@@ -1,12 +1,12 @@
-import { cart } from './cart.js';
-import { products } from './products.js';
+import {cart,removeFromCart} from './cart.js';
+import {products} from './products.js';
 
-let cartSummeryHTML = ''
+let cartSummeryHTML = '';
 
 cart.forEach((cartItem) => {
   const mealId = cartItem.mealId;
 
-  let matchingProduct='';
+  let matchingProduct;
   
 
   products.forEach((meal) => {
@@ -15,11 +15,12 @@ cart.forEach((cartItem) => {
     }
   });
   
+  
  
   cartSummeryHTML += `
   <div class="my-order customer-order">
           <div class="my-food-order">
-            <img src="${matchingProduct.image}"/>
+            <img src="${matchingProduct.image}">
            <p>
             ${matchingProduct.name}
            </p>
@@ -30,7 +31,7 @@ cart.forEach((cartItem) => {
             
             <div class="delete-edit check-out-quantity">
               <div class="quantity">${cartItem.quantity}</div>
-              <div class="delete">Delete</div>
+              <div class="delete js-delete-btn" data-meal-id="${matchingProduct.id}">Delete</div>
               <div class="Edit">Edit</div>
             </div>
           </div>
@@ -40,6 +41,16 @@ cart.forEach((cartItem) => {
 });
 
 document.querySelector('.js-order-summery').innerHTML = cartSummeryHTML
+document.querySelectorAll('.js-delete-btn')
+.forEach((btn)=>{
+  btn.addEventListener('click', () => {
+    const mealId = btn.dataset.mealId;
+    removeFromCart(mealId);
+    console.log(cart)
+  });
+
+});
+
 
 
   
