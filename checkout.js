@@ -18,7 +18,7 @@ cart.forEach((cartItem) => {
   
  
   cartSummeryHTML += `
-  <div class="my-order customer-order">
+  <div class="my-order customer-order js-cart-remove-${matchingProduct.id}">
           <div class="my-food-order">
             <img src="${matchingProduct.image}">
            <p>
@@ -46,7 +46,10 @@ document.querySelectorAll('.js-delete-btn')
   btn.addEventListener('click', () => {
     const mealId = btn.dataset.mealId;
     removeFromCart(mealId);
-    console.log(cart)
+
+    const cartRemove = document.querySelector(`.js-cart-remove-${mealId}`);
+    cartRemove.remove();
+
   });
 
 });
