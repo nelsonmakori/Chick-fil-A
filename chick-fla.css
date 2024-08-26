@@ -150,10 +150,9 @@ p{
   font-size: 17px;
   font-weight: 600;
 }
-.product-orders{
+
   
-  
-}
+
 .meals:hover{
   background-color: beige;
   border:1.5px solid tomato;
@@ -190,6 +189,8 @@ p{
   width:83px;
   
 }
+
+
 .checkout-sign-in{
   margin-right: 20px;
   width:83px;
@@ -224,6 +225,9 @@ hr{
 }
 .my-order-checkout{
   display: flex;
+  height:200px;
+  
+  color: red;
   justify-content: space-between;
   margin-top: 37px;
   text-align: center;
@@ -234,10 +238,12 @@ hr{
   font-size: 14px;
 }
 .check-out{
-  background-color: bisque;
-  height: 100px;
+  border: 1px solid black;
+  height: 400px;
   width: 40%;
-  height: 70vh;
+  color: black;
+
+  
   margin-right: 17px;
 }
 .amount{
@@ -259,62 +265,57 @@ hr{
   margin-right: 5px;
 }
 
-.date-cvv{
-  display: flex;
-  font-size: 12px;
-  margin-left:50px;
-  margin-top: 10px;
-}
-.date-cvv input{
-  width:50%;
-  height: 25px;
-  border-radius:7px;
-  border-width: thin;
-}
-::placeholder{
-  font-size: 10px;
-}
-.card-name-number input{
-  width:60%;
-  height: 25px;
-  border-radius: 10px;
-  border-width: thin;
-}
-.card-name-number label{
-margin-right:133px;
-}
-.expire-date{
-  margin-left:70px;
-}
-
-.zip-code label{
-  margin-right:133px;
-  
-}
-.zip-code input{
-
-  width: 60%;
-  height: 25px;
-  border-radius: 10px;
-  border-width:thin;
-}
-.check-out-footer{
-  margin-top: 20px;
-  font-size: 12px;
-}
-.checkout-btn-done{
-  margin-top: 15px;
-  width:30%;
-  height:30px;
-  background-color: red;
-  color: #fff;
-  border-radius: 12px;
-  border: none;
-}
 .quantity{
   margin-right: 5px;
 }
-.check-out-quantity{
-  margin-right: 10px;
+.items{
+  display: flex;
+  gap:120px;
+  margin-top: 30px;
+  margin-left:40px;
+  text-align: center;
+}
+.total-before-tax{
+  display: flex;
+  gap:120px;
+  margin-top: 30px;
+  margin-left:40px;
+  text-align: center;
+}
+.order-total{
+  display: flex;
+  gap:120px;
+  font-size:18px;
+  margin-top: 30px;
+  margin-left:40px;
+  text-align: center;
+  color: rgb(255, 99, 71);
+  font-weight: 900;
+
+}
+.estimated-tax{
+  display: flex;
+  gap:120px;
+  margin-top: 30px;
+  margin-left:40px;
+  text-align: center;
+}
+.place-order{
+  background-color: rgba(255, 255, 0, 0.977);
+  width:60%;
+  margin-top:40px;
+  height:40px;
+  border-radius: 10px;
+  border: none;
+}
+.items-amount{
+  margin-left: 47px;
+}
+.tax-amount{
+  margin-right:84px;
+}
+.check-out-hr{
+  color: rgb(22, 20, 20);
+  margin-top: 20px;
 }
 

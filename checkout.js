@@ -1,22 +1,21 @@
-import {cart,removeFromCart} from './cart.js';
-import {products} from './products.js';
 
-let cartSummeryHTML = '';
+import { cart, removeFromCart } from "./cart.js";
+import { getProducts, products } from "./products.js";
+import { paymentSummery } from "./paymentSection.js";
+
+paymentSummery();
+
+
+
+let cartSummeryHTML = "";
 
 cart.forEach((cartItem) => {
   const mealId = cartItem.mealId;
 
-  let matchingProduct;
+  let matchingProduct = getProducts(mealId);
+
   
 
-  products.forEach((meal) => {
-    if (meal.id === mealId) {
-      matchingProduct = meal;
-    }
-  });
-  
-  
- 
   cartSummeryHTML += `
   <div class="my-order customer-order js-cart-remove-${matchingProduct.id}">
           <div class="my-food-order">
@@ -37,23 +36,19 @@ cart.forEach((cartItem) => {
           </div>
   </div>
   `;
- 
 });
 
-document.querySelector('.js-order-summery').innerHTML = cartSummeryHTML
-document.querySelectorAll('.js-delete-btn')
-.forEach((btn)=>{
-  btn.addEventListener('click', () => {
+document.querySelector(".js-order-summery").innerHTML = cartSummeryHTML;
+document.querySelectorAll(".js-delete-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
     const mealId = btn.dataset.mealId;
     removeFromCart(mealId);
 
     const cartRemove = document.querySelector(`.js-cart-remove-${mealId}`);
     cartRemove.remove();
-
   });
-
 });
 
 
 
-  
+

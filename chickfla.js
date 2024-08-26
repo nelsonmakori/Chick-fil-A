@@ -47,9 +47,9 @@ let orderList = document.getElementById("orderList");
 
 menu.addEventListener("mouseover", () => {
   orderList.style.display = "block";
-  console.log("hapo vipi");
+  
 });
 menu.addEventListener("mouseout", () => {
   orderList.style.display = "none";
 });
-console.log(orderList);
+
