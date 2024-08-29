@@ -22,7 +22,7 @@ export const products = [
   {
     id:"1",
     image:'chikfla.images/treats.png',
-    price: 8.99,
+    price: 8.39,
     name:"limited time flavors"
   },
   {
@@ -34,7 +34,19 @@ export const products = [
   {
   id:"4",
   image:"chikfla.images/meals.png",
-  price:4.99,
+  price:4.77,
   name:"meals"
+  },
+  {
+    id:"5",
+    image:"chikfla.images/Breakfast.png",
+    price:3.99,
+    name:"Breakfast"
+  },
+  {
+    id:'6',
+    image:"chikfla.images/sides.png",
+    price:2.59,
+    name:"sides"
   }
 ]

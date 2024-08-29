@@ -142,8 +142,13 @@ p{
   
 }
 .products{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3,250px);
+  grid-auto-rows:200px;
+  grid-column-gap:100px;
+  grid-row-gap:100px;
+  
+  
   text-align: center;
   margin-top: 90px;
   color: #004F71;

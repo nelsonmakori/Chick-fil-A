@@ -37,7 +37,7 @@ export function paymentSummery() {
         <div class="order-footer">
           <div class="order-total">
             <div>order-total</div>
-            <div>$${Math.round(totalCents)}</div>
+            <div>$${totalCents.toFixed(2)}</div>
             
           </div>
         </div>
