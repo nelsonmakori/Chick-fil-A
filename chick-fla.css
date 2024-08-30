@@ -117,8 +117,12 @@ h3{
 .order-section{
   display: flex;
   justify-content: space-between;
+  margin-left:70px;
+  margin-right: 20px;
+  
 
 }
+
 .order-now{
   color: white;
   background-color: red;
