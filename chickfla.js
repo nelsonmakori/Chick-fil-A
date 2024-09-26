@@ -49,7 +49,7 @@ menu.addEventListener("mouseover", () => {
   orderList.style.display = "block";
   
 });
-menu.addEventListener("mouseout", () => {
+//menu.addEventListener("mouseout", () => {
   orderList.style.display = "none";
-});
+//});
 

@@ -46,6 +46,8 @@ document.querySelectorAll(".js-delete-btn").forEach((btn) => {
 
     const cartRemove = document.querySelector(`.js-cart-remove-${mealId}`);
     cartRemove.remove();
+
+    paymentSummery();
   });
 });
 
